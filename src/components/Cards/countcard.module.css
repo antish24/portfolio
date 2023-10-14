@@ -1,0 +1,30 @@
+.box{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(215, 215, 215, 0.215);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18.1px);
+    -webkit-backdrop-filter: blur(18.1px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+.box span:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+}
+.box span:nth-child(2){
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.box span:last-child{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

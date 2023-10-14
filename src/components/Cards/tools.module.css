@@ -1,0 +1,15 @@
+.cont{
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont:hover{
+    animation: spin 1s linear;
+}
+@keyframes spin {
+    0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}

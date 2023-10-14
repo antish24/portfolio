@@ -1,0 +1,210 @@
+.container{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background: transparent;
+}
+.fixedcontainer{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18.1px);
+-webkit-backdrop-filter: blur(18.1px);
+border: 1px solid rgba(255, 255, 255, 0.09);
+}
+.menubox{
+    width: 100vw;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+.closebtn{
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    color: black;
+}
+.menulink{
+    font-size: 20px;
+    color: rgb(143, 143, 143);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+}
+.menulink:hover .menucircle{
+    background: rgb(143, 143, 143);
+    border-radius: 50%;
+    transition: all .3s;
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+.menuactivelink{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    position: relative;
+}
+.menuactivelink .menucircle{
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: all .3s;
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+.menucircle{
+    bottom: -30px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+}
+.menucontactbtn{
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background: #000000;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 15px;
+}
+.menucontactbtn:hover{
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
+}
+
+
+.cont{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.link{
+    font-size: 20px;
+    color: rgb(143, 143, 143);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+}
+.link:hover .circle{
+    background: rgb(143, 143, 143);
+    border-radius: 50%;
+    transition: all .3s;
+    position: absolute;
+    bottom: -20px;
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+.activelink{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    position: relative;
+}
+.activelink .circle{
+    background: white;
+    border-radius: 50%;
+    transition: all .3s;
+    position: absolute;
+    bottom: -20px;
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+.circle{
+    bottom: -40px;
+    position: absolute;
+    background: black;
+}
+.contactbtn{
+    padding: 10px;
+    border: 2px solid white;
+    background: #ffffff;
+    color:black;
+    font-weight: 500;
+    border-radius: 15px;
+}
+.contactbtn:hover{
+    border: 2px solid white;
+    color: white;
+    background:black;
+}
+.menubtn{
+    display: none;
+    color: white;
+}
+.homepage{
+    display: none;
+    color: white;
+}
+.contactpage{
+    display: none;
+    color: white;
+}
+@media(max-width:1140px){
+    .homepage{
+        display: block;
+    }
+    .contactpage{
+        display: block;
+    }
+    .menubtn{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .cont{
+        width: 95%;
+    }
+}

@@ -1,0 +1,36 @@
+.cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    width: 40%;
+    font-size: 70px;
+    color: white;
+}
+.right{
+    height: 600px;
+    width: 55%;
+    object-fit: contain;
+}
+@media(max-width:1100px) {
+    .left{
+        font-size: 50px;
+    }
+}
+@media(max-width:700px) {
+    .cont{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    .right{
+        height: 400px;
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+}

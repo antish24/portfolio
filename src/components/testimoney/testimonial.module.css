@@ -1,0 +1,39 @@
+.swipercont{
+    width: 50%;
+    height: 40vh;
+}
+.slide{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(231, 231, 231, 0.119);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18.1px);
+-webkit-backdrop-filter: blur(18.1px);
+border: 1px solid rgba(255, 255, 255, 0.24);
+}
+.name{
+    font-size: 20px;
+}
+.msg{
+    font-size: 25px;
+    width: 80%;
+    text-align: center
+}
+@media(max-width:740px){
+    .swipercont{
+        width: 100%;
+    }
+    .name{
+        font-size:16px;
+    }
+    .msg{
+        font-size: 20px;
+    }
+}
