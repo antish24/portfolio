@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/Footer";
 const inter = Roboto({ subsets: ["latin"],weight:['100','300','400','700','900']});
 
 export const metadata = {
-  title: "ISH 24",
+  title: "ISH 24 Inc",
   description: "Developer and Graphics Designer",
 };
 
