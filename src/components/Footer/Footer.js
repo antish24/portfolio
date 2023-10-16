@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bodybox}>
-        © 2007 - 2023 ISH 24, Inc. All Rights Reserved. Privacy policy
+        © 2019 - 2023 ISH 24, Inc. All Rights Reserved. Privacy policy
         </div>
       </div>
     </div>
