@@ -1,0 +1,117 @@
+.cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.cont:nth-child(even){
+    flex-direction: row-reverse;
+}
+.left{
+    width: 50%;
+    object-fit:contain;
+    max-height: 300px;
+    object-fit: contain;
+}
+.right{
+    width: 45%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.info{
+    width: 90%;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.casebtn{
+    width: 140px;
+    height: 60px;
+    font-weight: 700;
+    border: none;
+    font-size: 20px;
+}
+.casebtn:hover , .casebtn:active{
+    background: #000;
+    border: 1px solid white;
+    color: white;
+}
+.livebtn{
+    width: 140px;
+    font-weight: 700;
+    height: 60px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.livebtn:hover , .livebtn:active{
+    background: white;
+    border: 1px solid white;
+    color: black;
+}
+@media(max-width:900px){
+    .cont{
+        justify-content: center;
+        height: max-content;
+    }
+    .cont:nth-child(even){
+        flex-direction: row;
+    }
+    .left{
+        width: 90%;
+        height: max-content;
+    }
+    .right{
+        width: 90%;
+        align-items: center;
+    }
+    .info{
+        text-align: center;
+    }
+    .detail{
+    justify-content: space-evenly;
+    gap: 0;
+    }
+    .casebtn{
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .livebtn{
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .info{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+@media(max-width:700px){
+    .left{
+        height: max-content;
+    }
+}

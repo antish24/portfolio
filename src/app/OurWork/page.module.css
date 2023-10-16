@@ -15,20 +15,10 @@
     background-size: contain;
     background-position: 50% 50%;
   }
-  .projectslist{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    gap: 50px;
-  }
+
   @media(max-width:1140px){
     .box{
         width: 95%;
-    }
-    .projectslist{
-        display: flex;
-        flex-wrap: wrap;
     }
     .applife{
         height: 400px;
