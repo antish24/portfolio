@@ -15,8 +15,8 @@ const AboutPage = () => {
   const introData={id:1,title:"About Us",img:"/intro-01.png"}
 
   const aboutData={
-    id:1,header:"More than Software Development Services",
-    info:"Traditional web and mobile development companies are usually limited to software development services. As you probably know by now, your project needs more than that to succeed.When it comes to mobile and web apps, crafting innovative digital experiences and guaranteeing quality matters a lot. However, much more is needed to make sure your company flourishes. Our strategic partner approach helps guarantee a world-class product and impactful business results. That is why we work side by side with you to make optimal strategic decisions that impact your company in a positive way. Whether you are a small startup or a large enterprise, your business matters to us."
+    id:1,header:"More than Digital Development Services",
+    info:"Our strategic partner approach helps guarantee a world-class product and impactful business results. That is why we work side by side with you to make optimal strategic decisions that impact your company in a positive way. Whether you are a small startup or a large enterprise, your business matters to us."
   }
 
   const brandsData={

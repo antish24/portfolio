@@ -41,13 +41,13 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 .brandimg{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background: white;
 }
 @media(max-width:700px){
