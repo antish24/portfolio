@@ -1,9 +1,9 @@
 import TopNavBar from "@/components/NavBars/topnavbar/TopNavBar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({ subsets: ["latin"],weight:['100','300','400','700','900']});
 
 export const metadata = {
   title: "ISH 24",

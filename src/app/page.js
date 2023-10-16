@@ -16,14 +16,11 @@ const LandingPage = () => {
     {id:2,img:'/uriah.png',name:'uriah'},
     {id:3,img:'/trust.png',name:'trust'},
     {id:4,img:'/avi ict.png',name:'avi ict'},
-    {id:5,img:'/swed tech-01.png',name:'swed tech'},
     {id:6,img:'/kube-01.png',name:'kube comics'},
     {id:7,img:'/eagle coffee.jpg',name:'eagle coffee'},
     {id:8,img:'/fikirtruck.jpg',name:'fikir'},
     {id:9,img:'/zaahirah travels.png',name:'zaahirah'},
-    {id:9,img:'/acordia-01.png',name:'Acordia'},
-    {id:9,img:'/tcc.jpg',name:'tcc'},
-    {id:9,img:'/siket.jpg',name:'siket'},
+    {id:10,img:'/acordia-01.png',name:'Acordia'},
   ]
   
   const works = [

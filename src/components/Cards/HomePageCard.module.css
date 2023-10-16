@@ -38,6 +38,7 @@ transition: all 1s;
     width: 80%;
     height: 200px;
     color: white;
+    font-weight: 100;
 }
 @media(max-width:740px){
     .title{

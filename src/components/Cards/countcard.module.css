@@ -10,6 +10,7 @@
     backdrop-filter: blur(18.1px);
     -webkit-backdrop-filter: blur(18.1px);
     border: 1px solid rgba(255, 255, 255, 0.24);
+    font-weight: 300;
 }
 .box span:first-child{
     display: flex;

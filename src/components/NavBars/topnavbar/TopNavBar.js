@@ -2,12 +2,11 @@
 import React, { useEffect, useState } from "react";
 import styles from "./topnavbar.module.css";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { MdCall, MdClose, MdLogoDev, MdMenu } from "react-icons/md";
+import { usePathname} from "next/navigation";
+import { MdCall, MdClose, MdMenu } from "react-icons/md";
 
 const TopNavBar = () => {
   const pathName = usePathname();
-  const navigate = useRouter();
   const [openMenu, SetOpenMenu] = useState(false);
   const Links = [
     { id: 1, url: "/", name: "Home" },
@@ -63,9 +62,9 @@ const TopNavBar = () => {
         <span className={styles.menubtn}>
           <MdMenu onClick={() => SetOpenMenu(true)} size={40} />
         </span>
-        <span className={styles.homepage}>
-          <MdLogoDev onClick={() => navigate.push("/")} size={40} />
-        </span>
+        <Link href={'/'} className={styles.homepage}>
+          ISH 24
+        </Link>
         <span className={styles.contactpage}>
           <MdCall onClick={() => window.location.href = `tel:${'+251934608749'}`} size={40} />
         </span>

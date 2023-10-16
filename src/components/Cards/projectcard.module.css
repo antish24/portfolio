@@ -6,6 +6,7 @@
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    font-weight: 300;
 }
 
 .img{
@@ -27,7 +28,6 @@
 .head{
     font-size: 25px;
     color: white;
-    font-weight: 600;
 }
 .subhead{
     font-size: 18px;
