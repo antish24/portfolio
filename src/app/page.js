@@ -63,7 +63,7 @@ const LandingPage = () => {
     id:1,header:"ISH 24 in Numbers",
   }
   
-  const introData={id:1,title:"Ish 24: Your Development Partner.",img:"/intro-01.png"}
+  const introData={id:1,title1:"Welcome to Ish 24",title2:'We provide innovative solutions for your business.',img:"/intro-01.png"}
 
   const contentData={
     id:1,header:"Quick Insight of What We Do",

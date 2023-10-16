@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const Services = () => {
-  const introData = { id: 1, title: "Our Services", img: "/service.png" };
+  const introData = { id: 1, title1: "Our Services",title2:'Discover the wide range of services we offer.', img: "/service.png" };
 
   const topdata = {
     id: 1,

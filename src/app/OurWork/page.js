@@ -11,7 +11,7 @@ export const metadata = {
 
 const OurWork = () => {
 
-  const introData={id:1,title:"Projects & Outcomes",img:"/working-01.png"}
+  const introData={id:1,title1:"Projects & Outcomes" ,title2:'Explore our portfolio of successful projects.',img:"/working-01.png"}
   
   const topdata = {
     id: 1,

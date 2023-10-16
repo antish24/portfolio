@@ -1,26 +1,23 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React from 'react'
+import { TypeAnimation } from 'react-type-animation';
 
-const TypingAnimation = ({textData}) => {
-  const [text, setText] = useState('');
-  const sentence = textData
+const TypingAnimation = ({textData1,textData2}) => {
+  return (
+    <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        `${textData1}`,
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        `${textData2}`,
+        1000,
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize:'inherit', display: 'inline-block' }}
+      repeat={Infinity}
+    />
+  )
+}
 
-  useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex < sentence.length - 1) {
-        setText((prv)=>prv + sentence[currentIndex]);
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 100); // Adjust the typing speed by changing the interval duration
-    return () => {
-      clearInterval(typingInterval);
-    };
-  }, []);
-
-  return <span>{text}</span>;
-};
-
-export default TypingAnimation;
+export default TypingAnimation
