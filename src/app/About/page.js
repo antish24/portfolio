@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 const AboutPage = () => {
-  const introData={id:1,title1:"About Us",title2:"Learn more about our mission and vision.",img:"/intro-01.png"}
+  const introData={id:1,title1:"About Us",title2:"Learn more about our mission and vision.",img:"/about-01.png"}
 
   const aboutData={
     id:1,header:"More than Digital Development Services",

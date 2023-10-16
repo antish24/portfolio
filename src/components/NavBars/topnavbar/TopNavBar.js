@@ -54,7 +54,7 @@ const TopNavBar = () => {
             <span className={styles.menucircle}></span>
           </Link>
         ))}
-        <Link href="/Contact" className={styles.menucontactbtn}>
+        <Link href="/Contact" onClick={() => SetOpenMenu(false)} className={styles.menucontactbtn}>
           Get In Touch
         </Link>
       </div>

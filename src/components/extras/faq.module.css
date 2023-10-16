@@ -1,0 +1,10 @@
+.cont{
+    width: 45%;
+    min-height: 450px;
+}
+@media(max-width:1140px){
+    .cont{
+      width: 95%;
+    }
+}
+  
