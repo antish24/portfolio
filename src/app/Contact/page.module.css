@@ -1,0 +1,16 @@
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cont{
+    width: 80%;
+}
+  
+@media(max-width:1140px){
+    .cont{
+      width: 95%;
+    }
+}
+  
