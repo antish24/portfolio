@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className={styles.topbox}>
           <div className={styles.works}>
-            <h1>Our Specialities</h1>
+            <h2>Our Specialities</h2>
             <div className={styles.listbox}>
             <div className={styles.lists}>
               <span>E-commerce Development</span>
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.location}>
-            <h1>Locations</h1>
+            <h2>Locations</h2>
             <span>Abenem Build 5<sup>th</sup> Floor Office No 404 Addis Abeba, Ethiopia</span>
             <span>Hawassa, Ethiopia</span>
           </div>

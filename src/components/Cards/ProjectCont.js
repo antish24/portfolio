@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './projectcont.module.css'
+import Link from 'next/link'
 
 const ProjectCont = (data) => {
   return (
@@ -8,7 +9,7 @@ const ProjectCont = (data) => {
         <div className={styles.right}>
             <div className={styles.title}>{data.title}</div>
             <div className={styles.info}>{data.info}</div>
-            <div className={styles.detail}><button className={styles.casebtn}>CASE STUDY</button><a href={data.url} target='_blank' className={styles.livebtn}>LIVE LINK</a></div>
+            <div className={styles.detail}><Link href={`/OurWork/${data.title}`} className={styles.casebtn}>CASE STUDY</Link><a href={data.url} target='_blank' className={styles.livebtn}>LIVE LINK</a></div>
         </div>
     </div>
   )

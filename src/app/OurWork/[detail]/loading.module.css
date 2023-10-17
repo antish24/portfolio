@@ -6,6 +6,7 @@
     justify-content: center;
     color: white;
     background: #000;
+    font-size: 1em;
 }
 .loading{
     width: 50px;

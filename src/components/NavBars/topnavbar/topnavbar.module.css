@@ -1,6 +1,6 @@
 .container{
     width: 100vw;
-    height: 120px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 .fixedcontainer{
     width: 100vw;
-    height: 120px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
 .menubox{
     width: 100vw;
     background: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -34,6 +34,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
     justify-content: center;
     gap: 30px;
     overflow: hidden;
+    z-index: 1000;
     transition: all .3s linear;
 }
 .closebtn{
@@ -43,13 +44,14 @@ border: 1px solid rgba(255, 255, 255, 0.09);
     color: black;
 }
 .menulink{
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(143, 143, 143);
     display: flex;
     align-items: center;
     flex-direction: column;
     gap:10px;
     position: relative;
+    font-weight:300;
 }
 .menulink:hover .menucircle{
     background: rgb(143, 143, 143);
@@ -63,12 +65,13 @@ border: 1px solid rgba(255, 255, 255, 0.09);
 }
 .menuactivelink{
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
     position: relative;
+    font-weight: 300;
 }
 .menuactivelink .menucircle{
     background: rgb(0, 0, 0);
@@ -90,7 +93,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
     border: 2px solid rgb(0, 0, 0);
     background: #000000;
     color:rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 15px;
 }
 .menucontactbtn:hover{
@@ -102,7 +105,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
 
 .cont{
     width: 80%;
-    height: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,6 +117,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
     display: flex;
     align-items: center;
     font-size: 40px;
+    font-weight:900;
 }
 .links{
     display: flex;
@@ -121,28 +125,29 @@ border: 1px solid rgba(255, 255, 255, 0.09);
     gap: 30px;
 }
 .link{
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(143, 143, 143);
     display: flex;
     align-items: center;
     flex-direction: column;
     gap:10px;
     position: relative;
-    font-weight: 300;
+    font-weight: 200;
 }
 .link:hover .circle{
     background: rgb(143, 143, 143);
     border-radius: 50%;
     transition: all .3s;
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
     display: block;
     width: 8px;
     height: 8px;
 }
 .activelink{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 200;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,26 +159,27 @@ border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 50%;
     transition: all .3s;
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
     display: block;
     width: 8px;
     height: 8px;
 }
 .circle{
-    bottom: -40px;
+    bottom: -30px;
     position: absolute;
     background: black;
 }
 .contactbtn{
-    padding: 10px;
-    border: 2px solid white;
+    padding: 5px 3px;
+    border: 1px solid white;
     background: #ffffff;
     color:black;
-    font-weight: 500;
-    border-radius: 15px;
+    font-weight: 200;
+    font-size: 16px;
+    border-radius: 5px;
 }
 .contactbtn:hover{
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     background:black;
 }

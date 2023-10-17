@@ -78,10 +78,10 @@ const LandingPage = () => {
     id:1,header:"Recent Projects",
   }
   const projects=[
-    {id:1},
-    {id:4},
-    {id:3},
-    {id:2},
+    {id:1,title:"Zaahirah",subhead:"Full Stack Website Dev",img:'/zaahirah.png',top:'rgb(0,100,255)',bottom:'white',color:'black'},
+    {id:2,title:"Kube Comics",subhead:"Branding and Logo",img:'/kube-01.png',top:'rgb(205, 54, 54)',bottom:'white',color:'black'},
+    {id:3,title:"Eagel Coffee",subhead:"Graphics Design",img:'/eagle coffee.jpg',top:'rgb(150,75,0)',bottom:'white',color:'black'},
+    {id:4,title:"Ish Movie",subhead:"Movie Trailer Website",img:'/ishmovie.jpg',top:'rgb(0,140,255)',bottom:'white',color:'black'},
   ]
 
   const testmony={

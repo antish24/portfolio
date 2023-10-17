@@ -1,6 +1,6 @@
 .box{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,6 +11,7 @@
     -webkit-backdrop-filter: blur(18.1px);
     border: 1px solid rgba(255, 255, 255, 0.24);
     font-weight: 300;
+    border-radius: 10px;
 }
 .box span:first-child{
     display: flex;
@@ -23,9 +24,11 @@
     color: white;
     font-size: 40px;
     text-align: center;
+    font-weight: 700;
 }
 .box span:last-child{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    font-weight: 200;
 }

@@ -8,12 +8,12 @@ const TypingAnimation = ({textData1,textData2}) => {
       sequence={[
         // Same substring at the start will only be typed out once, initially
         `${textData1}`,
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        3000, // wait 1s before replacing "Mice" with "Hamsters"
         `${textData2}`,
-        1000,
+        3000,
       ]}
       wrapper="span"
-      speed={50}
+      speed={150}
       style={{ fontSize:'inherit', display: 'inline-block' }}
       repeat={Infinity}
     />

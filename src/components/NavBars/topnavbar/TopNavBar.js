@@ -20,7 +20,7 @@ const TopNavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 120;
+      const isScrolled = window.scrollY > 80;
       setScrolled(isScrolled);
     };
 
@@ -49,6 +49,7 @@ const TopNavBar = () => {
               pathName === list.url ? styles.menuactivelink : styles.menulink
             }
             href={list.url}
+            scroll={true}
           >
             <span>{list.name}</span>
             <span className={styles.menucircle}></span>
@@ -62,7 +63,7 @@ const TopNavBar = () => {
         <span className={styles.menubtn}>
           <MdMenu onClick={() => SetOpenMenu(true)} size={40} />
         </span>
-        <Link href={'/'} className={styles.homepage}>
+        <Link href={'/'} scroll={true} className={styles.homepage}>
           ISH 24
         </Link>
         <span className={styles.contactpage}>
@@ -77,6 +78,7 @@ const TopNavBar = () => {
                 pathName === list.url ? styles.activelink : styles.link
               }
               href={list.url}
+              scroll={true}
             >
               <span>{list.name}</span>
               <span className={styles.circle}></span>
