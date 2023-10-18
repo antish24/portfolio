@@ -55,12 +55,12 @@
 
 .msgbox{
     width: 90%;
-    height: 180px;
+    height: 150px;
     position: relative;
 }
 .msgbox textarea{
     width: 100%;
-    height: 80%;
+    height: 100%;
     padding: 10px;
     font-size: 17px;
     outline: none;
@@ -91,7 +91,12 @@
 .sendbtn:disabled{
     cursor:not-allowed;
 }
-
+.errorbox{
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
 @media(max-width:1140px){
     .formbox{
       width: 95%;

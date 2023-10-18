@@ -1,12 +1,13 @@
-import React from 'react'
-import styles from './tools.module.css'
+import React from "react";
+import styles from "./tools.module.css";
 
 const ToolsCard = (data) => {
   return (
     <div className={styles.cont}>
-      {data.img}
+      <span>{data.name}</span>
+      <img src={`/${data.logo}`}/>
     </div>
-  )
-}
+  );
+};
 
-export default ToolsCard
+export default ToolsCard;

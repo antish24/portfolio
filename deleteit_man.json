@@ -1,0 +1,100 @@
+[{
+    "title": "Zaahirah",
+    "subTitle": "Full Stack Website Dev",
+    "logo": "zaahirah.png",
+    "topColor":"rgb(0,100,255)",
+    "bottomColor":"white",
+    "fontColor":"black",
+    "image": "zaahirah.png",
+    "intro": "The project aims to create a comprehensive and user-friendly travel website using the React framework for the frontend, Node.js for the backend, and MySQL as the database management system.",
+    "body": "The website will serve as a platform for users to explore and book various travel services offered by Zaahira Travels.",
+    "conclusion": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The seamless integration of various features and secure payment options will provide an enhanced user experience.",
+    "extra": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The will provide an enhanced user experience.",
+    "tools": [
+        {
+          "tool": "652fe62e5135c0c1694dd47f"
+        },
+        {
+          "tool": "652fe62e5135c0c1694dd480"
+        },
+        {
+            "tool": "652fe62e5135c0c1694dd481"
+          }
+      ],
+    "gitUrl": "https://github.com/antish24/portfolio",
+    "liveUrl": "https://www.zaahirahtravels.com"
+  },
+  {
+    "title": "Kube Comics",
+    "subTitle": "Branding and Logo",
+    "logo": "kube.png",
+    "topColor":"rgb(205, 54, 54)",
+    "bottomColor":"white",
+    "fontColor":"black",
+    "image": "kube.png",
+    "intro": "The project aims to create a comprehensive and user-friendly travel website using the React framework for the frontend, Node.js for the backend, and MySQL as the database management system.",
+    "body": "The website will serve as a platform for users to explore and book various travel services offered by Zaahira Travels.",
+    "conclusion": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The seamless integration of various features and secure payment options will provide an enhanced user experience.",
+    "extra": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The will provide an enhanced user experience.",
+    "tools": [
+        {
+          "tool": "652fe62e5135c0c1694dd47f"
+        },
+        {
+          "tool": "652fe62e5135c0c1694dd480"
+        },
+        {
+            "tool": "652fe62e5135c0c1694dd481"
+          }
+      ],
+    "gitUrl": "https://github.com/antish24/portfolio",
+    "liveUrl": "https://www.kubecomicseth.com/"
+  },
+  {"title": "Eagel Coffee",
+  "subTitle": "Graphics Design",
+  "logo": "eagelcoffee.jpg",
+  "topColor":"rgb(150,75,0)",
+  "bottomColor":"white",
+  "fontColor":"black",
+  "image": "eagelcoffee.jpg",
+  "intro": "The project aims to create a comprehensive and user-friendly travel website using the React framework for the frontend, Node.js for the backend, and MySQL as the database management system.",
+  "body": "The website will serve as a platform for users to explore and book various travel services offered by Zaahira Travels.",
+  "conclusion": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The seamless integration of various features and secure payment options will provide an enhanced user experience.",
+  "extra": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The will provide an enhanced user experience.",
+ "tools": [
+    {
+      "tool": "652fe62e5135c0c1694dd47f"
+    },
+    {
+      "tool": "652fe62e5135c0c1694dd480"
+    },
+    {
+        "tool": "652fe62e5135c0c1694dd481"
+      }
+  ],
+  "gitUrl": "https://github.com/antish24/portfolio",
+  "liveUrl": "https://www.zaahirahtravels.com"
+},
+{    "title": "Ish Movie",
+"subTitle": "Movie Trailer Website",
+"logo": "ishmovie.jpg",
+"topColor":"rgb(0,140,255)",
+"bottomColor":"white",
+"fontColor":"black",
+"image": "ishmovie.jpg",
+"intro": "The project aims to create a comprehensive and user-friendly travel website using the React framework for the frontend, Node.js for the backend, and MySQL as the database management system.",
+"body": "The website will serve as a platform for users to explore and book various travel services offered by Zaahira Travels.",
+"conclusion": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The seamless integration of various features and secure payment options will provide an enhanced user experience.",
+"extra": "The use of React for the frontend, Node.js for the backend, and MySQL for the database ensures a robust and scalable solution. The will provide an enhanced user experience.",
+"tools": [
+    {
+      "tool": "652fe62e5135c0c1694dd482"
+    },
+    {
+      "tool": "652fe62e5135c0c1694dd484"
+    }
+  ],
+"gitUrl": "https://github.com/antish24/portfolio",
+"liveUrl": "https://ishmovieie.vercel.app/"
+}
+]

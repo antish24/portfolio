@@ -4,24 +4,41 @@ import { MdBarChart, MdDesignServices, MdDevices, MdGroups, MdHelpCenter } from 
 import { AiFillLike, AiOutlineFileDone } from 'react-icons/ai'
 import IntroCont from "@/components/Cards/IntroCont";
 import ContentCont from "@/components/Cards/ContentCont";
+import { Url } from "@/helper/Url";
 
 export const metadata = {
   title: "ISH 24 Home",
   description: "Developer and Graphics Designer",
 };
 
-const LandingPage = () => {
-  const brands=[
-    {id:1,img:'/tri.png',name:'tri'},
-    {id:2,img:'/uriah.png',name:'uriah'},
-    {id:3,img:'/trust.png',name:'trust'},
-    {id:4,img:'/avi ict.png',name:'avi ict'},
-    {id:6,img:'/kube-01.png',name:'kube comics'},
-    {id:7,img:'/eagle coffee.jpg',name:'eagle coffee'},
-    {id:8,img:'/fikirtruck.jpg',name:'fikir'},
-    {id:9,img:'/zaahirah travels.png',name:'zaahirah'},
-    {id:10,img:'/acordia-01.png',name:'Acordia'},
-  ]
+async function getBrands() {
+  const res = await fetch(`${Url}/api/partners`, {
+    cache: "force-cache",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+async function getProjects() {
+  const res = await fetch(`${Url}/api/projects`, {
+    cache: "force-cache",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+const LandingPage =async () => {
+
+  const brands=await getBrands()
+  const projects=await getProjects()
   
   const works = [
     {
@@ -77,12 +94,6 @@ const LandingPage = () => {
   const projectsData={
     id:1,header:"Recent Projects",
   }
-  const projects=[
-    {id:1,title:"Zaahirah",subhead:"Full Stack Website Dev",img:'/zaahirah.png',top:'rgb(0,100,255)',bottom:'white',color:'black'},
-    {id:2,title:"Kube Comics",subhead:"Branding and Logo",img:'/kube-01.png',top:'rgb(205, 54, 54)',bottom:'white',color:'black'},
-    {id:3,title:"Eagel Coffee",subhead:"Graphics Design",img:'/eagle coffee.jpg',top:'rgb(150,75,0)',bottom:'white',color:'black'},
-    {id:4,title:"Ish Movie",subhead:"Movie Trailer Website",img:'/ishmovie.jpg',top:'rgb(0,140,255)',bottom:'white',color:'black'},
-  ]
 
   const testmony={
     id:1,header:"Testimonial",

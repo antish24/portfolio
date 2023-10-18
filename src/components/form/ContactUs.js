@@ -1,7 +1,8 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './contactus.module.css'
 import { MdEmail, MdMessage, MdPerson } from 'react-icons/md'
+import { Url } from '@/helper/Url'
 
 const ContactUs = () => {
   const [namefocus,setnamefocus]=useState(false)
@@ -12,15 +13,44 @@ const ContactUs = () => {
   const [emailValue,setEmailValue]=useState('')
   const [msgValue,setMsgValue]=useState('')
 
-  const handelMsg=()=>{
-    console.log('hi')
-    setEmailValue('')
-    setMsgValue('')
-    setNameValue('')
-  }
+  const [tnxMsg,setTnxMsg]=useState('')
+  const [loading,setLoading]=useState(false)
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setTnxMsg('')
+    }, 6000);
+  },[tnxMsg])
+
+
+  const handelMsg = async () => {
+    setLoading(true)
+    console.log(nameValue +"  "+ emailValue+" "+msgValue)
+    try {
+      const res = await fetch(`${Url}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nameValue,
+          emailValue,
+          msgValue,
+        }),
+      });
+      res.status === 201 && setTnxMsg('Thank You ,we wil get back to you')
+      setEmailValue('')
+      setMsgValue('')
+      setNameValue('')
+    } catch (err) {
+      setTnxMsg('Try Again')
+      console.log(err);
+    }
+    setLoading(false)
+  };
 
   return (
-    <form className={styles.formbox}>
+    <div className={styles.formbox}>
       <h1>Get in Touch</h1>
       <div className={styles.namebox}>
         <span style={{display:namefocus || nameValue!==''?"none":"flex"}} className={styles.nameicon}><MdPerson/> Name</span>
@@ -52,8 +82,9 @@ const ContactUs = () => {
           maxLength={120}
            required/>
         </div>
-        <button className={styles.sendbtn} onSubmit={handelMsg} disabled={!msgValue ||  !nameValue || !emailValue}>Submit</button>
-    </form>
+        <span className={styles.errorbox} style={{display:tnxMsg===''?'none':'flex',fontWeight:'300',color:tnxMsg==='Try Again'?"red":"black"}}>{tnxMsg}</span>
+        <button className={styles.sendbtn} onClick={handelMsg} disabled={!msgValue ||  !nameValue || !emailValue}>{loading?'Sending':'Send'}</button>
+    </div>
   )
 }
 

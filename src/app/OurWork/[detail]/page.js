@@ -1,44 +1,49 @@
 import React from "react";
 import styles from "./page.module.css";
 import TypingAnimation from "@/components/extras/TypingAnimation";
+import { Url } from "@/helper/Url";
 
-export async function generateMetadata({ params }) {
-  return {
-    title: params.detail,
-  };
+export const metadata = {
+  title: "Our Work Project",
+};
+
+async function getProjects(id) {
+  const res = await fetch(`${Url}/api/projects/${id}`, {
+    cache: "force-cache",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
 }
 
-const Detailpage = ({ params }) => {
+const Detailpage =async ({ params }) => {
+
+  const projects=await getProjects(params.detail)
+
   return (
     <div className={styles.cont}>
       <div className={styles.box}>
         <div className={styles.imgbox}>
-          <img src={"/zaahirahweb.jpg"} />
+          <img src={`/${projects.image}`} />
         </div>
         <div className={styles.infobox}>
             <span>
-          <TypingAnimation textData1={params.detail.replace('%20', ' ')} textData2={`${params.detail.replace('%20', ' ')} Project Overview`}/>
+          <TypingAnimation textData1={projects.title} textData2={`${projects.title} Project Overview`}/>
             </span>
           <div className={styles.infos}>
-            The project aims to create a comprehensive and user-friendly travel
-            website using the React framework for the frontend, Node.js for the
-            backend, and MySQL as the database management system.
+            {projects.intro}
           </div>
           <div className={styles.infos}>
-            The website will serve as a platform for users to explore and book
-            various travel services offered by Zaahira Travels.
+            {projects.body}
           </div>
           <div className={styles.infos}>
-            The use of React for the frontend, Node.js for the backend, and
-            MySQL for the database ensures a robust and scalable solution. The
-            seamless integration of various features and secure payment options
-            will provide an enhanced user experience.
+            {projects.extra}
           </div>
           <div className={styles.infos}>
-            The Zaahira Travels website project aims to create a comprehensive
-            and user-friendly travel website using the React framework for the
-            frontend, Node.js for the backend, and MySQL as the database
-            management system.
+            {projects.conclusion}
           </div>
         </div>
         <div className={styles.toolsbox}>
@@ -56,14 +61,14 @@ const Detailpage = ({ params }) => {
           <span>See Project</span>
           <a
             className={styles.bcode}
-            href="https://github.com/antish24/portfolio"
+            href={projects.gitUrl}
             target="_blank"
           >
             Browse Code
           </a>
           <a
             className={styles.live}
-            href="https://zaahirahtravels.com"
+            href={projects.liveUrl}
             target="_blank"
           >
             Live
