@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import IntroCont from '@/components/Cards/IntroCont'
 import ContentCont from '@/components/Cards/ContentCont';
 import { Url } from '@/helper/Url';
-import { SiAdobeaftereffects, SiAdobeillustrator, SiAdobeindesign, SiAdobephotoshop, SiAdobepremierepro, SiCplusplus, SiFigma, SiFirebase, SiFlutter, SiGit, SiHtml5, SiJavascript, SiJsonwebtokens, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiStripe, SiSupabase, SiTailwindcss } from 'react-icons/si';
+import { SiAdobeillustrator, SiAdobeindesign, SiAdobephotoshop, SiAdobepremierepro, SiCplusplus, SiFigma, SiFirebase, SiFlutter, SiGit, SiHtml5, SiJavascript, SiJsonwebtokens, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiStripe, SiSupabase, SiTailwindcss } from 'react-icons/si';
 
 
 export const metadata = {
@@ -13,7 +13,7 @@ export const metadata = {
 
 async function getBrands() {
   const res = await fetch(`${Url}/api/partners`, {
-    cache: "force-cache",
+    cache:'no-store',
   });
 
   if (!res.ok) {
