@@ -11,11 +11,21 @@ export const metadata = {
   description: "Developer and Graphics Designer",
 };
 
+async function getProjects() {
+  const res = await fetch(`/api/projects`, {
+    cache: "force-cache",
+  });
 
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+                    }
 const LandingPage =async () => {
 
   const brands=[]
-  const projects=[]
+  const projects=await getProjects()
   
   const works = [
     {
