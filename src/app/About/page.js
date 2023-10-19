@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import IntroCont from '@/components/Cards/IntroCont'
 import ContentCont from '@/components/Cards/ContentCont';
 import { Url } from '@/helper/Url';
-import { SiAdobeillustrator, SiAdobeindesign, SiAdobephotoshop, SiAdobepremierepro, SiCplusplus, SiFigma, SiFirebase, SiFlutter, SiGit, SiHtml5, SiJavascript, SiJsonwebtokens, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiStripe, SiSupabase, SiTailwindcss } from 'react-icons/si';
+import { SiAdobeillustrator, SiAdobeindesign, SiAdobephotoshop, SiAdobepremierepro, SiCplusplus, SiFigma, SiFirebase, SiFlutter, SiGit, SiHtml5, SiJavascript, SiJsonwebtokens, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiSupabase, SiTailwindcss } from 'react-icons/si';
 
 
 export const metadata = {
@@ -43,7 +43,7 @@ const AboutPage = async() => {
     {id:13,logo:<SiFlutter/>},
     {id:14,logo:<SiHtml5/>},
     {id:15,logo:<SiTailwindcss/>},
-    {id:16,logo:<SiStripe/>},
+    {id:16,logo:<SiAdobepremierepro/>},
     {id:17,logo:<SiGit/>},
     {id:18,logo:<SiFirebase/>},
     {id:19,logo:<SiJsonwebtokens/>},
