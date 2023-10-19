@@ -36,8 +36,8 @@ async function getTools() {
 
 const AboutPage = async() => {
 
-  const brands=await getBrands()
-  const tools=await getTools()
+  const brands=[]
+  const tools=[]
 
   const introData={id:1,title1:"About Us",title2:"Learn more about our mission and vision.",img:"/about-01.png"}
 
