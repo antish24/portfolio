@@ -11,10 +11,6 @@ export const metadata = {
   description: "Developer and Graphics Designer",
 };
 
-async function getBrands() {
-  const res = await fetch(`${Url}/api/partners`, {
-    cache: "force-cache",
-  });
 
 const LandingPage =async () => {
 
