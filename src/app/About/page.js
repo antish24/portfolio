@@ -10,12 +10,34 @@ export const metadata = {
   description: "Developer and Graphics Designer",
 };
 
+async function getBrands() {
+  const res = await fetch(`${Url}/api/partners`, {
+    cache: "force-cache",
+  });
 
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+async function getTools() {
+  const res = await fetch(`${Url}/api/tools`, {
+    cache: "force-cache",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
 
 const AboutPage = async() => {
 
-  const brands=[]
-  const tools=[]
+  const brands=await getBrands()
+  const tools= await getTools()
 
   const introData={id:1,title1:"About Us",title2:"Learn more about our mission and vision.",img:"/about-01.png"}
 
