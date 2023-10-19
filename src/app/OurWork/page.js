@@ -10,20 +10,10 @@ export const metadata = {
   description: "Developer and Graphics Designer",
 };
 
-async function getProjects() {
-  const res = await fetch(`${Url}/api/projects`, {
-    cache: "force-cache",
-  });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
 
 const OurWork =async () => {
-  const projects=await getProjects()
+  const projects=[]
   const introData = {
     id: 1,
     title1: "Projects & Outcomes",
