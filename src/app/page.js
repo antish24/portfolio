@@ -37,8 +37,8 @@ async function getProjects() {
 
 const LandingPage =async () => {
 
-  const brands=await getBrands()
-  const projects=await getProjects()
+  const brands=[]
+  const projects=[]
   
   const works = [
     {
