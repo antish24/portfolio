@@ -26,6 +26,7 @@ transition: all 1s;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s;
 }
 .title{
     font-size: 25px;
@@ -53,3 +54,15 @@ transition: all 1s;
         padding: 10px 0;
     }
   }
+  
+.cont:hover {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+ }
+.cont:hover .image {
+    color: rgb(0,140,255);
+    transform: perspective(200px) rotateX(-20deg);
+}
+  

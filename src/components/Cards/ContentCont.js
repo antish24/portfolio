@@ -20,12 +20,11 @@ const ContentCont = ({data,work,brand,project,counts,testmony,tools}) => {
       </div>
       <div className={styles.bodybox}>
       {work && work.map((list)=><HomePageCard key={list.id} {...list}/>)}
-      <BrandsCont brands={brand}/>
-      {/* {brand && brand.map((list)=><img className={styles.brandimg} key={list._id} src={`/${list.partnerLogo}`} alt={list.partnerName}/>)} */}
+      {brand && <BrandsCont brands={brand}/>}
       {project && project.map((list)=><ProjectCard key={list._id} {...list}/>)}
       {counts && counts.map((list)=><CountCard key={list.id} {...list}/>)}
       {testmony &&<Testimonial testmony={testmony}/>}
-      {tools && tools.map((list)=><ToolsCard key={list._id} {...list}/>)}
+      {tools && tools.map((list)=><ToolsCard key={list.id} {...list}/>)}
       </div>
     </div>
   );

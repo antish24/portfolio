@@ -15,12 +15,11 @@
     height: 100px;
     object-fit: contain;
 }
-.swipercontsmall{
+.swipercont{
     width: 100%;
     height: 100px;
-    display: none;
 }
-.slidesmall{
+.slide{
     width: 100px;
     height: 100px;
     display: flex;
@@ -35,9 +34,6 @@
 }
 @media(max-width:740px){
     .swipercont{
-        display: none;
-    }
-    .swipercontsmall{
-        display:flex;
+        max-height: 100px;
     }
 }
