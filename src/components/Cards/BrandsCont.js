@@ -57,6 +57,7 @@ const BrandsCont = ({ brands }) => {
                 alt={list.partnerName}
                 width={100}
                 height={100}
+                className={styles.img}
               />
             </SwiperSlide>
           ))}
@@ -82,6 +83,7 @@ const BrandsCont = ({ brands }) => {
                 alt={list.partnerName}
                 width={100}
                 height={100}
+                className={styles.img}
               />
             </SwiperSlide>
           ))}

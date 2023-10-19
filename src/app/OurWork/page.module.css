@@ -7,6 +7,12 @@
   .box{
     width: 80%;
   }
+  .categorybox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   .applife{
     background: url('/applife-01.png');
     width: 100%;
@@ -22,5 +28,11 @@
     }
     .applife{
         height: 400px;
+    }
+  }
+
+  @media(max-width:750px){
+    .categorybox{
+      justify-content: center;
     }
   }
