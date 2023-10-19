@@ -23,7 +23,7 @@ async function getProjects() {
 }
 
 const OurWork =async () => {
-  const projects=await getProjects()
+  const projects=[]
   const introData = {
     id: 1,
     title1: "Projects & Outcomes",
