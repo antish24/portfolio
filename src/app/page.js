@@ -16,25 +16,6 @@ async function getBrands() {
     cache: "force-cache",
   });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
-
-async function getProjects() {
-  const res = await fetch(`${Url}/api/projects`, {
-    cache: "force-cache",
-  });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
-
 const LandingPage =async () => {
 
   const brands=[]
