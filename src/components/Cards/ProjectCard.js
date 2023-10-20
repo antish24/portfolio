@@ -12,7 +12,7 @@ const ProjectCard = (d) => {
             <span className={styles.subhead} style={{color:d.fontColor}}>{d.subTitle}</span>
         </div>
         <div className={styles.view}>
-            <Link href={`/OurWork/${d._id}`} style={{color:d.fontColor}} className={styles.viewbtn}><FaArrowRight size={30}/></Link>
+            <Link href={`/OurWork/${d.title}/${d._id}`} style={{color:d.fontColor}} className={styles.viewbtn}><FaArrowRight size={30}/></Link>
         </div>
     </div>
   )

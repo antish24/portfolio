@@ -27,7 +27,7 @@
     justify-content: center;
     flex-direction: column;
 }
-.slide .img{
+.imgbg{
     width: 100px;
     height: 100px;
     object-fit: contain;
