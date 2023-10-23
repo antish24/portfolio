@@ -24,7 +24,8 @@ const ContactUs = () => {
   },[tnxMsg])
 
 
-  const handelMsg = async () => {
+  const handelMsg = async (e) => {
+    e.preventDefault()
     setLoading(true)
     try {
       const res = await axios.post(`${Url}/api/contact`, {nameValue,emailValue,msgValue});
@@ -40,7 +41,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className={styles.formbox}>
+    <form className={styles.formbox}>
       <h1>Get in Touch</h1>
       <div className={styles.namebox}>
         <span style={{display:namefocus || nameValue!==''?"none":"flex"}} className={styles.nameicon}><MdPerson/> Name</span>
@@ -73,8 +74,8 @@ const ContactUs = () => {
            required/>
         </div>
         <span className={styles.errorbox} style={{display:tnxMsg===''?'none':'flex',fontWeight:'300',color:tnxMsg==='Try Again'?"red":"black"}}>{tnxMsg}</span>
-        <button className={styles.sendbtn} onClick={handelMsg} disabled={!msgValue ||  !nameValue || !emailValue}>{loading?'Sending':'Send'}</button>
-    </div>
+        <button className={styles.sendbtn} onSubmit={handelMsg} disabled={!msgValue ||  !nameValue || !emailValue}>{loading?'Sending':'Send'}</button>
+    </form>
   )
 }
 
