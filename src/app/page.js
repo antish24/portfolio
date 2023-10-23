@@ -25,7 +25,7 @@ async function getProjects() {
 }
 
 async function getBrands() {
-  const res = await fetch(`${Url}/api/projects`, { cache: 'no-store', });
+  const res = await fetch(`${Url}/api/partners`, { cache: 'no-store', });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -37,8 +37,8 @@ async function getBrands() {
 
 const LandingPage =async () => {
 
-  const brands=await getProjects()
-  const projects=await getBrands()
+  const projects=await getProjects()
+  const brands=await getBrands()
 
   const works = [
     {
