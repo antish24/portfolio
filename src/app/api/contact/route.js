@@ -37,7 +37,7 @@ export const POST = async (request) => {
 
       //send msg
       const msg=`msg from ${nameValue}`
-      sendOTP(msg);
+      await sendOTP(msg);
 
       return new NextResponse("Msg sent", {
         status: 201,
