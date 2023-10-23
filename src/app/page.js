@@ -23,7 +23,7 @@ async function getBrands() {
 
 async function getProjects() {
   const res = await fetch(`${Url}/api/projects`, {
-    cache:'no-store',
+    cache: 'no-store',
   });
 
   if (!res.ok) {
