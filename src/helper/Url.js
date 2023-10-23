@@ -1,1 +1,1 @@
-export const Url='https://ish24.vercel.app'
+export const Url='http://ish24.vercel.app'

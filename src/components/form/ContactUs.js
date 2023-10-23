@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './contactus.module.css'
 import { MdEmail, MdMessage, MdPerson } from 'react-icons/md'
 import { Url } from '@/helper/Url'
+import axios from 'axios'
 
 const ContactUs = () => {
   const [namefocus,setnamefocus]=useState(false)
@@ -25,20 +26,9 @@ const ContactUs = () => {
 
   const handelMsg = async () => {
     setLoading(true)
-    console.log(nameValue +"  "+ emailValue+" "+msgValue)
     try {
-      const res = await fetch(`${Url}/api/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          nameValue,
-          emailValue,
-          msgValue,
-        }),
-      });
-      res.status === 201 && setTnxMsg('Thank You ,we wil get back to you')
+      const res = await axios.post(`${Url}/api/contact`, {nameValue,emailValue,msgValue});
+      res && setTnxMsg('Thank You ,we wil get back to you')
       setEmailValue('')
       setMsgValue('')
       setNameValue('')
