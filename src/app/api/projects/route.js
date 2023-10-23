@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import connect from "@/backend/config/db";
 import Project from "@/backend/models/Project";
 
-export const GET = async () => {
+export const GET = async (request) => {
 
   try {
     await connect();
