@@ -50,7 +50,9 @@ const ContactUs = () => {
           value={nameValue} 
           onBlur={()=>setnamefocus(false)}
           onChange={(e)=>setNameValue(e.target.value)} 
-          type='text' required/>
+          type='text' required
+          maxLength={10}
+          />
         </div>
 
         <div className={styles.namebox}>
@@ -60,7 +62,9 @@ const ContactUs = () => {
           value={emailValue} 
           onBlur={()=>setemailfocus(false)}
           onChange={(e)=>setEmailValue(e.target.value)} 
-          type='email' required/>
+          type='email' required
+          maxLength={30}
+          />
         </div>
 
         <div className={styles.msgbox}>
