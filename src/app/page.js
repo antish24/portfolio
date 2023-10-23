@@ -11,15 +11,6 @@ export const metadata = {
   description: "Developer and Graphics Designer",
 };
 
-async function getBrands() {
-  const res = await fetch(`${Url}/api/partners`, { cache: 'no-store', });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
 
 async function getProjects() {
   const res = await fetch(`${Url}/api/projects`, {
@@ -33,10 +24,22 @@ async function getProjects() {
   return res.json();
 }
 
+async function getBrands() {
+  const res = await fetch(`${Url}/api/partners`, { cache: 'no-store', });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+
 const LandingPage =async () => {
 
-  const brands=await getBrands()
   const projects=await getProjects()
+  const brands=await getBrands()
+
   const works = [
     {
       id: 1,
