@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 async function getBrands() {
-  const res = await fetch(`${Url}/api/partners`, { next: { revalidate: 3600 }
+  const res = await fetch(`${Url}/api/partners`, { next: { revalidate: 1 }
   });
 
   if (!res.ok) {
