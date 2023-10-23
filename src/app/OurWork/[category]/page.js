@@ -11,9 +11,7 @@ export async function generateMetadata({ params }) {
 }
 
 async function getProjects() {
-  const res = await fetch(`${Url}/api/projects`, 
-    { next: { revalidate: 1 } 
-  });
+  const res = await fetch(`${Url}/api/projects`, { cache: 'no-store', });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

@@ -12,8 +12,7 @@ export const metadata = {
 };
 
 async function getBrands() {
-  const res = await fetch(`${Url}/api/partners`, { next: { revalidate: 1 }
-  });
+  const res = await fetch(`${Url}/api/partners`, { cache: 'no-store', });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
