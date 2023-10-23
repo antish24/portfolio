@@ -9,8 +9,8 @@ const sendOTP=async(name)=>{
     to: `0934608749`,
     message: name,
     template_id: 'welcome',
-    username: process.env.SMSUSER,
-    password: process.env.SMSPASSWORD
+    username: 'zaahirahtravels',
+    password: "K;X4(;8puQiD0*r0-+z"
   };
   await axios.post('https://sms.yegara.com/api2/send',postData).then(response => {
     console.log(response.data);
