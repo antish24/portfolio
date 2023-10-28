@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./footer.module.css";
 import GetInTouch from "../button/GetInTouch";
+import {CurrentDate} from "./CurrentDate";
 
 const Footer = () => {
   return (
@@ -37,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bodybox}>
-        © 2019 - 2023 ISH 24, Inc. All Rights Reserved. Privacy policy
+        © 2019 - {CurrentDate} ISH 24, Inc. All Rights Reserved. Privacy policy
         </div>
       </div>
     </div>

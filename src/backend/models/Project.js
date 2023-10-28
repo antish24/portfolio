@@ -10,6 +10,7 @@ const ProjectSchema = new Schema({
   bottomColor: { type: String },
   fontColor: { type: String},
   image: { type: String, required: true },
+  category: { type: String,required: true},
   intro: { type: String, required: true },
   body: { type: String, required: true },
   conclusion: { type: String, required: true },

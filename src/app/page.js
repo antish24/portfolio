@@ -104,27 +104,22 @@ const LandingPage =async () => {
     {
       id: 1,
       msg: "Outstanding web development services with a keen eye for detail",
-      name: "Sarah T",
+      name: "Amin khiidhr",
     },
     {
       id: 2,
-      msg: "Impressive expertise in creating visually captivating websites.",
-      name: "Mark Maslow",
+      msg: "Impressive expertise in creating visually captivating graphics.",
+      name: "Esayas",
     },
     {
       id: 3,
       msg: "Highly satisfied with the seamless performance of our new website",
-      name: "Mahder Mesfen",
+      name: "Mahder",
     },
     {
       id: 4,
-      msg: "Outstanding web development services with a keen eye for detail",
-      name: "Mekonnen",
-    },
-    {
-      id: 5,
       msg: "Exceeded our expectations with their innovative web development solutions.",
-      name: "Abiy Ahemed",
+      name: "Eyob",
     },
   ];
 

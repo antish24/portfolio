@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 import { Url } from "@/helper/Url";
 import ProjectCont from "@/components/Cards/ProjectCont";
 import TypingAnimation from "@/components/extras/TypingAnimation";
+import axios from "axios";
+import EmptyProjectList from "@/components/extras/EmptyProjectList";
 
 export async function generateMetadata({ params }) {
   return {
@@ -10,31 +12,32 @@ export async function generateMetadata({ params }) {
   };
 }
 
-async function getProjects() {
-  const res = await fetch(`${Url}/api/projects`, {
-    cache: 'no-store',
-  });
+async function getProjects(category) {
+  const res = await axios.post(`${Url}/api/projects/category`, {category:category});
   
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
+  return res.data;
 }
 
 const CategoryPage = async ({params}) => {
-  const projects = await getProjects();
+  const projects = await getProjects(params.category);
   const Title = params.category;
 
   return (
     <div className={styles.cont}>
       <div className={styles.box}>
-        <div className={styles.topbox}>
+        {
+          projects.length > 0 &&
+          <div className={styles.topbox}>
         <TypingAnimation textData1={Title} textData2={`${Title} Works`} />
         </div>
-        {projects.map((list) => (
-          <ProjectCont key={list._id} {...list} />
-        ))}
+        }
+        {projects.length > 0 ?
+      projects.map((list) => (
+        <ProjectCont key={list._id} {...list} />
+      ))
+      :
+      <EmptyProjectList img={params.category}/> 
+      }
       </div>
     </div>
   );
